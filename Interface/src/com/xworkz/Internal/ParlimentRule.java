@@ -7,5 +7,9 @@ public interface ParlimentRule {
 
     void timeToDiscussBills();
 
+    default void noFakeParliment() {
+        System.out.println("No Fake Parliment");
+    }
+
 
 }

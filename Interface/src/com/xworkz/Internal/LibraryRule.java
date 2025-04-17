@@ -7,5 +7,9 @@ public interface LibraryRule {
 
     void timeToReadBooks();
 
+    default void noFakeLibrary() {
+        System.out.println("No Fake Library");
+    }
+
 
 }

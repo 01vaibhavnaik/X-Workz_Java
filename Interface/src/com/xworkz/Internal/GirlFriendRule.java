@@ -7,4 +7,8 @@ public interface GirlFriendRule {
     void toLoyaltyGirlFriend();
 
     void toRespectGirlFriend();
+
+    default void noFakeGf(){
+        System.out.println("no Fake Gf");
+    }
 }

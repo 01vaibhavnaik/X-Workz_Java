@@ -18,5 +18,9 @@ public class Boxing implements BoxingRule {
     public void useShoe() {
         System.out.println("useShoe");
     }
+    @Override
+    public void noFakeBoxing() {
+        System.out.println("No Fake Boxing");
+    }
 
 }

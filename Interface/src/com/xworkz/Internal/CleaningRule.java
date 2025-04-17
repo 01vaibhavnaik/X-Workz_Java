@@ -8,5 +8,9 @@ public interface CleaningRule {
 
     void timeToCleanBathroom();
 
+    default void noFakeCleaning() {
+        System.out.println("No Fake Cleaning");
+    }
+
 
 }

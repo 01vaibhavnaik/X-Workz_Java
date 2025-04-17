@@ -5,4 +5,8 @@ public interface RoomRule {
     void bedClean();
     void keepClean();
 
+    default void sleep() {
+        System.out.println("Sleeping in the room");
+    }
+
 }

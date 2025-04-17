@@ -7,5 +7,9 @@ public interface SoapRule {
 
     void timeToTakeBath();
 
+    default void noFakeSoap() {
+        System.out.println("No Fake Soap");
+    }
+
 
 }

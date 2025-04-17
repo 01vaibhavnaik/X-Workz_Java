@@ -6,6 +6,9 @@ public interface BagRule {
     void timeToUnpackBag();
 
     void timeToCarryBag();
+    default void noFakeBag() {
+        System.out.println("No Fake Bag");
+    }
 
 
 

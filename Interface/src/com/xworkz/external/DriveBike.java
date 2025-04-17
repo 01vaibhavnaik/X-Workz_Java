@@ -17,4 +17,9 @@ public class DriveBike implements BikeRule {
     public void obeyTrafficSignals() {
         System.out.println("Obey traffic signals");
     }
+
+    @Override
+    public void wearHelmet() {
+        System.out.println("Always wear a helmet while riding.");
+    }
 }

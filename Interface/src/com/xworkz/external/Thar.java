@@ -18,4 +18,9 @@ public class Thar implements OffRoadCarRule {
     public void timeToService() {
         System.out.println("Time to service.");
     }
+
+    @Override
+    public void noFakeCar() {
+        System.out.println("No fake car.");
+    }
 }

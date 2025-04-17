@@ -18,4 +18,9 @@ public class Cleaning implements CleaningRule {
     public void timeToCleanBathroom() {
         System.out.println("Time to clean bathroom is 10:00 AM");
     }
+
+    @Override
+    public void noFakeCleaning() {
+        System.out.println("No fake cleaning");
+    }
 }

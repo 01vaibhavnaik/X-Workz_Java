@@ -18,4 +18,9 @@ public class Mart implements MartRule {
     public void timeToCheckMart() {
         System.out.println("Checking the mart...");
     }
+
+    @Override
+    public void noFakeMart() {
+        System.out.println("No fake mart");
+    }
 }

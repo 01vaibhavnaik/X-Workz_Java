@@ -18,4 +18,9 @@ public class Wife implements WifeRule {
     public void toLoveWife() {
         System.out.println("Loving the wife...");
     }
+
+    @Override
+    public void noFakeWife() {
+        System.out.println("No fake wife");
+    }
 }

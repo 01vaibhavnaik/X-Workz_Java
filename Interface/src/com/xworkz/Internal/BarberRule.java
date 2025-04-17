@@ -7,5 +7,9 @@ public interface BarberRule {
 
     void timeToCutHair();
 
+    default void noFakeBarberShop() {
+        System.out.println("No Fake Barber Shop");
+    }
+
 
 }

@@ -1,7 +1,6 @@
 package com.xworkz.external;
 
 import com.xworkz.Internal.SportCarRule;
-import org.omg.PortableServer.ServantRetentionPolicy;
 
 public class BWM implements SportCarRule {
 
@@ -18,5 +17,9 @@ public class BWM implements SportCarRule {
     @Override
     public void noIllegalModifications() {
         System.out.println("No illegal modifications in BWM");
+    }
+    @Override
+    public void carMaintenance() {
+        System.out.println("Regular car maintenance is required for BWM.");
     }
 }

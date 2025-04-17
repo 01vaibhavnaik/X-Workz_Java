@@ -18,4 +18,8 @@ public class Hostel implements HostelRule {
     public void timeToDoLaundry() {
         System.out.println("Time to do laundry.");
     }
+    @Override
+    public void dinnerTime() {
+        System.out.println("Dinner time is 8 PM.");
+    }
 }

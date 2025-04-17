@@ -11,5 +11,9 @@ public interface OfficeRule {
 
 
 
-    }
+
+
+        default void noFakeOffice() {
+            System.out.println("No Fake Office");
+        }
 }

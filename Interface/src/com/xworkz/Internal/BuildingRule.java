@@ -7,5 +7,9 @@ public interface BuildingRule {
 
     void timeToCheckBuilding();
 
+    default void noFakeBuilding() {
+        System.out.println("No Fake Building");
+    }
+
 
 }

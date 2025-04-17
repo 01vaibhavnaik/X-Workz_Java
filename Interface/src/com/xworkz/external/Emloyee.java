@@ -18,4 +18,8 @@ public class Emloyee implements EmployeeRule {
     public void timeToCompleteTask() {
         System.out.println("Time to complete task");
     }
+    @Override
+    public void noFakeEmployee() {
+        System.out.println("No fake employee");
+    }
 }

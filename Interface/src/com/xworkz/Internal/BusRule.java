@@ -6,4 +6,8 @@ public interface BusRule {
     void noLittering();
     void noDisruption();
 
+    default void noFakeTickets() {
+        System.out.println("No Fake Tickets");
+    }
+
 }

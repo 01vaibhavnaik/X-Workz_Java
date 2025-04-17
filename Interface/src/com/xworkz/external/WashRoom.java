@@ -18,4 +18,9 @@ public class WashRoom implements WashRoomRule {
     public void noExcessiveNoise() {
         System.out.println("No excessive noise in the washroom.");
     }
+
+    @Override
+    public void washRoomCleanliness() {
+        System.out.println("Maintain cleanliness in the washroom.");
+    }
 }

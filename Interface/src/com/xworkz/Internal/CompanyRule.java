@@ -8,5 +8,9 @@ public interface CompanyRule {
 
     void timeToLeaveOffice();
 
+    default void noFakeCompany() {
+        System.out.println("No Fake Company");
+    }
+
 
 }

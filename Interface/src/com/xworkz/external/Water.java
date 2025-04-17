@@ -18,4 +18,8 @@ public class Water implements WaterRule {
     public void timeToPurifyWater() {
         System.out.println("Time to purify water is 15 minutes");
     }
+    @Override
+    public void noFakeWater() {
+        System.out.println("No fake water");
+    }
 }

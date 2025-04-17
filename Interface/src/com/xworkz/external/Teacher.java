@@ -18,4 +18,9 @@ public class Teacher implements TeacherRule {
     public void timeToSleep() {
         System.out.println("Time to sleep.");
     }
+
+    @Override
+    public void noFakeTeacher() {
+        System.out.println("No fake teacher.");
+    }
 }

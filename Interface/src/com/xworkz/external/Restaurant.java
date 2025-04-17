@@ -18,4 +18,9 @@ public class Restaurant implements RestaurantRule {
     public void noDamageToProperty() {
         System.out.println("Any damage to property will not be tolerated.");
     }
+
+    @Override
+    public void noFakeFood() {
+        System.out.println("No fake food is allowed in the restaurant.");
+    }
 }

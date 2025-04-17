@@ -8,4 +8,8 @@ public interface SatelliteRule {
     void tofocusOnWorkSatellite();
 
     void toTeachTeamSatellite();
+
+    default void noFakeSatellite() {
+        System.out.println("No Fake Satellite");
+    }
 }

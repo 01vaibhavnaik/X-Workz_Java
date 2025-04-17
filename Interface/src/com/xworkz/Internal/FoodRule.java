@@ -6,4 +6,8 @@ public interface FoodRule {
     void noWasting();
 
     void eatComplete();
+
+    default void noFakeFood() {
+        System.out.println("No Fake Food");
+    }
 }

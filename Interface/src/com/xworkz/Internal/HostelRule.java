@@ -8,4 +8,8 @@ public interface HostelRule {
     void timeToReturn();
 
     void timeToDoLaundry();
+
+    default void dinnerTime() {
+        System.out.println("Dinner time is 8 PM.");
+    }
 }

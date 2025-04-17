@@ -18,4 +18,8 @@ public class Mall implements MallRule {
     public void timeToCheckMall() {
         System.out.println("Checking the mall...");
     }
+    @Override
+    public void noFakeMall() {
+        System.out.println("No fake mall");
+    }
 }

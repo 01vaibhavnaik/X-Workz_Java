@@ -18,4 +18,8 @@ public class Bicycle implements BicycleRule {
     public void timeToCheckBicycle() {
         System.out.println("Checking the bicycle...");
     }
+    @Override
+    public void noFakeBicycle() {
+        System.out.println("No fake bicycle");
+    }
 }

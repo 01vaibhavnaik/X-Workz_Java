@@ -18,4 +18,8 @@ public class Protection implements ProtectionRule {
     public void timeToCheckSecurity() {
         System.out.println("Checking the security...");
     }
+    @Override
+    public void noFakeProtection() {
+        System.out.println("No fake protection");
+    }
 }

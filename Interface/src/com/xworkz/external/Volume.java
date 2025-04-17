@@ -18,4 +18,9 @@ public class Volume implements SpeakerRule {
     public void timeToListen() {
         System.out.println("Time to listen.");
     }
+
+    @Override
+    public void noFakeSpeaker() {
+        System.out.println("No fake speaker.");
+    }
 }

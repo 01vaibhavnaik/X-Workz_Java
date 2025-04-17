@@ -5,4 +5,8 @@ public interface SchoolRule {
     void uniform();
     void completeHomework();
 
+    default void extraCurricular() {
+        System.out.println("Participating in extra-curricular activities is encouraged.");
+    }
+
 }

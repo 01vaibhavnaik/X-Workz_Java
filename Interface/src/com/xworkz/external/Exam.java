@@ -18,4 +18,9 @@ public class Exam implements ExamRule {
     public void timeToCheckAnswerSheet() {
         System.out.println("Time to check answer sheet is 2:00 PM");
     }
+
+    @Override
+    public void noFakeExam() {
+        System.out.println("No fake exam");
+    }
 }

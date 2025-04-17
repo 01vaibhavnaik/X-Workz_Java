@@ -18,4 +18,9 @@ public class HairDryer implements HairDryerRule {
     public void timeToSwitchOff() {
         System.out.println("Time to switch off hair dryer is 5 minutes");
     }
+
+    @Override
+    public void noFakeHairDryer() {
+        System.out.println("No fake hair dryer");
+    }
 }

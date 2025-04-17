@@ -7,4 +7,8 @@ public interface NetWorkRule {
 
     void timeToTransferData();
 
+    default void noFakeNetwork() {
+        System.out.println("No Fake Network");
+    }
+
 }

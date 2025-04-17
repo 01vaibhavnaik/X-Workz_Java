@@ -7,5 +7,9 @@ public interface PhoneRule {
 
     void timeToVideoCall();
 
+    default void noFakePhone() {
+        System.out.println("No Fake Phone");
+    }
+
 
 }

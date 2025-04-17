@@ -17,4 +17,9 @@ public class Satellite implements SatelliteRule {
     public void toTeachTeamSatellite() {
         System.out.println("toTeachTeamSatellite");
     }
+
+    @Override
+    public void noFakeSatellite() {
+        System.out.println("No Fake Satellite");
+    }
 }

@@ -18,4 +18,9 @@ public class Computer implements ComputerRule {
     public void timeToExecute() {
         System.out.println("Time to execute");
     }
+
+    @Override
+    public void noFakeComputer() {
+        System.out.println("No fake computer");
+    }
 }

@@ -5,4 +5,8 @@ public interface LaptopRule {
     void noOverheating();
     void noDataLoss();
 
+    default void noFakeSoftware() {
+        System.out.println("No Fake Software");
+    }
+
 }

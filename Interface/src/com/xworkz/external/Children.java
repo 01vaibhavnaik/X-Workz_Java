@@ -18,4 +18,9 @@ public class Children implements ChildrenRule {
     public void toTeachChildren() {
         System.out.println("Teaching the children...");
     }
+
+    @Override
+    public void noFakeChildren() {
+        System.out.println("No fake children");
+    }
 }

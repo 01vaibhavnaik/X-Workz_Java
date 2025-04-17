@@ -18,4 +18,8 @@ public class Network implements NetWorkRule {
     public void timeToTransferData() {
         System.out.println("Time to transfer data.");
     }
+    @Override
+    public void noFakeNetwork() {
+        System.out.println("No fake network.");
+    }
 }

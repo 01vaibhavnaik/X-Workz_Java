@@ -18,4 +18,8 @@ public class Focus implements Camera {
     public void timeToZoomIn() {
         System.out.println("Time to zoom in is 2 seconds");
     }
+    @Override
+    public void noFakeCamera() {
+        System.out.println("No fake camera");
+    }
 }

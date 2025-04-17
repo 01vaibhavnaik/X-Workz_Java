@@ -18,4 +18,8 @@ public class Fruit implements FruitRule {
     public void timeToSlice() {
         System.out.println("Time to slice the fruit");
     }
+    @Override
+    public void noFakeFruit() {
+        System.out.println("No Fake Fruit");
+    }
 }

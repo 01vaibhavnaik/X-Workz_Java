@@ -7,5 +7,8 @@ public interface ShowRoomRule {
 
     void timeToDisplayItems();
 
+    default void noFakeShowRoom() {
+        System.out.println("No Fake Show Room");
+    }
 
 }

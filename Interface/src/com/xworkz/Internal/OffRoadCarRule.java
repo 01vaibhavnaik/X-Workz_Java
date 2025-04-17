@@ -8,4 +8,8 @@ public interface OffRoadCarRule {
     void timeToWash();
 
     void timeToService();
+
+    default void noFakeCar() {
+        System.out.println("No Fake Car");
+    }
 }

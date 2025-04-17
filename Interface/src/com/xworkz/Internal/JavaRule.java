@@ -7,4 +7,7 @@ public interface JavaRule {
 
     void timeToDebugJava();
 
+    default void noFakeJava() {
+        System.out.println("No Fake Java");
+    }
 }

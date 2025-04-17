@@ -18,4 +18,9 @@ public class Charger implements ChargerRule {
     public void noFakeCharger() {
         System.out.println("No fake charger");
     }
+
+    @Override
+    public void chargerSafety() {
+        System.out.println("Ensure charger safety.");
+    }
 }

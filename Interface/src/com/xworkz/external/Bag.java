@@ -18,4 +18,8 @@ public class Bag implements BagRule {
     public void timeToCarryBag() {
         System.out.println("Carrying the bag...");
     }
+    @Override
+    public void noFakeBag() {
+        System.out.println("No fake bag");
+    }
 }

@@ -18,4 +18,8 @@ public class TrafficRuleForPeople implements TrafficRule {
     public void wearHelmet() {
         System.out.println("Wearing helmet is mandatory");
     }
+    @Override
+    public void trafficLight() {
+        System.out.println("Traffic light rules apply");
+    }
 }

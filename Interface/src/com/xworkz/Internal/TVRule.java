@@ -7,5 +7,9 @@ public interface TVRule {
 
     void timeToSwitchOffTV();
 
+    default void noFakeTV() {
+        System.out.println("No Fake TV");
+    }
+
 
 }

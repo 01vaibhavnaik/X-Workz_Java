@@ -18,4 +18,9 @@ public class Office implements OfficeRule {
     public void toBeHonest() {
         System.out.println("Being honest is important in office");
     }
+
+    @Override
+    public void noFakeOffice() {
+        System.out.println("No fake office");
+    }
 }

@@ -19,4 +19,9 @@ public class Python implements ProgramRule {
         System.out.println("No Inappropriate Content");
     }
 
+    @Override
+    public void programDuration() {
+        System.out.println("Program duration is 3 months");
+    }
+
 }

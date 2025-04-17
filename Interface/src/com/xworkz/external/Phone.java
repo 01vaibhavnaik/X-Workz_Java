@@ -18,4 +18,9 @@ public class Phone implements PhoneRule {
     public void timeToVideoCall() {
         System.out.println("Time to video call.");
     }
+
+    @Override
+    public void noFakePhone() {
+        System.out.println("No fake phone.");
+    }
 }

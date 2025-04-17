@@ -6,6 +6,9 @@ public interface MartRule {
     void timeToStopMart();
 
     void timeToCheckMart();
+    default void noFakeMart() {
+        System.out.println("No Fake Mart");
+    }
 
 
 }

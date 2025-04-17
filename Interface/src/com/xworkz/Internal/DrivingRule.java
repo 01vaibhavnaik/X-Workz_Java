@@ -7,5 +7,9 @@ public interface DrivingRule {
 
     void timeToParkCar();
 
+    default void driveSafe() {
+        System.out.println("Drive Safe");
+    }
+
 
 }

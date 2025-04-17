@@ -19,5 +19,10 @@ public class ShopCustomer implements ShopRule {
         System.out.println("Pay before taking the product");
     }
 
+    @Override
+    public void shopTiming() {
+        System.out.println("Shop timing is 10 AM to 8 PM");
+    }
+
 
 }

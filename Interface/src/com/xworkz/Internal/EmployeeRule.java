@@ -8,4 +8,8 @@ public interface EmployeeRule {
     void timeToSubmitReport();
 
     void timeToCompleteTask();
+
+    default void noFakeEmployee() {
+        System.out.println("No Fake Employee");
+    }
 }

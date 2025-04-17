@@ -18,4 +18,9 @@ public class Chair implements ChairRule {
     public void noDamageToProperty() {
         System.out.println("No damage to property of the chair");
     }
+
+    @Override
+    public void fourLegs() {
+        System.out.println("Chair has four legs");
+    }
 }

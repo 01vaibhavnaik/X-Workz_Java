@@ -7,5 +7,9 @@ public interface TeacherRule {
 
     void timeToSleep();
 
+    default void noFakeTeacher() {
+        System.out.println("No Fake Teacher");
+    }
+
 
 }

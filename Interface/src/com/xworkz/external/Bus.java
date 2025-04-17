@@ -18,4 +18,9 @@ public class Bus implements BusRule {
     public void noDisruption() {
         System.out.println("No disruption in the bus");
     }
+
+    @Override
+    public void noFakeTickets() {
+        System.out.println("No fake tickets in the bus");
+    }
 }

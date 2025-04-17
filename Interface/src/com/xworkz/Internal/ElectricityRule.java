@@ -7,4 +7,8 @@ public interface ElectricityRule {
 
     void timeToUseElectricity();
 
+    default void noFakeElectricity() {
+        System.out.println("No Fake Electricity");
+    }
+
 }

@@ -5,4 +5,8 @@ public interface TrafficRule {
     void noHorn();
     void wearHelmet();
 
+    default void trafficLight() {
+        System.out.println("Follow traffic lights");
+    }
+
 }

@@ -7,5 +7,9 @@ public interface ExamRule {
 
     void timeToCheckAnswerSheet();
 
+    default void noFakeExam() {
+        System.out.println("No Fake Exam");
+    }
+
 
 }

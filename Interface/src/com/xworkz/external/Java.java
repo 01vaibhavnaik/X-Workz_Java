@@ -18,4 +18,9 @@ public class Java implements JavaRule {
     public void timeToDebugJava() {
         System.out.println("Debugging Java code...");
     }
+
+    @Override
+    public void noFakeJava() {
+        System.out.println("No fake Java");
+    }
 }

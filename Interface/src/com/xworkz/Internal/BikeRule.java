@@ -5,4 +5,8 @@ public interface BikeRule {
     void noOvertaking();
     void obeyTrafficSignals();
 
+    default void wearHelmet() {
+        System.out.println("Always wear a helmet while riding.");
+    }
+
 }

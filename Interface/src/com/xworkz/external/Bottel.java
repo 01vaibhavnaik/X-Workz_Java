@@ -18,4 +18,9 @@ public class Bottel implements BottelRule {
     public void timeToCheckBottel() {
         System.out.println("Time to check the bottle");
     }
+
+    @Override
+    public void noFakeBottel() {
+        System.out.println("No fake bottle");
+    }
 }

@@ -18,4 +18,8 @@ public class Couple implements CoupleRule {
     public void toLoyaltyCouple() {
         System.out.println("Being loyal to the couple...");
     }
+    @Override
+    public void noFakeCouple() {
+        System.out.println("No fake couple");
+    }
 }

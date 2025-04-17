@@ -9,4 +9,7 @@ public interface PeopleRule {
     void toBeFriendly();
 
     void toBeTrustworthy();
+    default void noFakePeople() {
+        System.out.println("No Fake People");
+    }
 }

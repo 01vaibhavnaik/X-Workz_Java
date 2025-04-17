@@ -7,5 +7,9 @@ public interface CodingRule {
 
     void timeToTest();
 
+    default void noFakeCoding() {
+        System.out.println("No Fake Coding");
+    }
+
 
 }

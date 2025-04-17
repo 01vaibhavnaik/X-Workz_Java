@@ -18,6 +18,11 @@ public class Student implements SchoolRule {
         System.out.println("Student should complete homework");
     }
 
+    @Override
+    public void extraCurricular() {
+        System.out.println("Participating in extra-curricular activities is encouraged.");
+    }
+
 
 
 }

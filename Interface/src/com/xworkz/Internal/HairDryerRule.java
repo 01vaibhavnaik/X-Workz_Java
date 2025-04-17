@@ -7,5 +7,9 @@ public interface HairDryerRule {
 
     void timeToSwitchOff();
 
+    default void noFakeHairDryer() {
+        System.out.println("No Fake Hair Dryer");
+    }
+
 
 }

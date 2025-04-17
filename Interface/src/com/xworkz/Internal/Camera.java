@@ -8,6 +8,9 @@ public interface Camera {
     void timeToRecordVideo();
 
     void timeToZoomIn();
+    default void noFakeCamera() {
+        System.out.println("No Fake Camera");
+    }
 
 
 }

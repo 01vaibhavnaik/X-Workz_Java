@@ -18,4 +18,9 @@ public class Parliment implements ParlimentRule {
     public void timeToDiscussBills() {
         System.out.println("Parliment discusses bills at 3:00 PM");
     }
+
+    @Override
+    public void noFakeParliment() {
+        System.out.println("No fake parliment");
+    }
 }

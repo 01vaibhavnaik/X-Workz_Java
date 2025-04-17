@@ -7,5 +7,7 @@ public interface SecurityRule {
 
     void timeToReportIncident();
 
-
+    default void noFakeSecurity() {
+        System.out.println("No Fake Security");
+    }
 }

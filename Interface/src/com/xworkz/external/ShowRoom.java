@@ -18,4 +18,9 @@ public class ShowRoom implements ShowRoomRule {
     public void timeToDisplayItems() {
         System.out.println("Time to display items is 11:00 AM");
     }
+
+    @Override
+    public void noFakeShowRoom() {
+        System.out.println("No fake show room");
+    }
 }

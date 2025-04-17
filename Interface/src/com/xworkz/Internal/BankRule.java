@@ -7,5 +7,11 @@ public interface BankRule {
 
     void timeToDepositMoney();
 
+    default void noFakeBank() {
+        System.out.println("No Fake Bank");
+    }
+
+
+
 
 }

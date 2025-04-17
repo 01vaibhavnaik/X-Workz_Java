@@ -18,4 +18,9 @@ public class CollageStudent implements CollageRule {
     public void noDrugs() {
         System.out.println("No drugs in the college");
     }
+
+    @Override
+    public void staySilent() {
+        System.out.println("Stay silent in the college");
+    }
 }

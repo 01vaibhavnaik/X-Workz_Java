@@ -18,4 +18,9 @@ public class Barber implements BarberRule {
     public void timeToCutHair() {
         System.out.println("Time to cut hair is 30 minutes");
     }
+
+    @Override
+    public void noFakeBarberShop() {
+        System.out.println("No fake barber shop");
+    }
 }

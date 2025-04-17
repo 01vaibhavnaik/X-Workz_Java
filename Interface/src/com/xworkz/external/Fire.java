@@ -18,4 +18,9 @@ public class Fire implements FireRule {
     public void timeToCallEmergencyServices() {
         System.out.println("Time to call emergency services");
     }
+
+    @Override
+    public void noFakeFire() {
+        System.out.println("No fake fire");
+    }
 }

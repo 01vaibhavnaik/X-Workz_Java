@@ -18,4 +18,9 @@ public class TV implements TVRule {
     public void timeToSwitchOffTV() {
         System.out.println("Time to switch off TV is 10 PM");
     }
+
+    @Override
+    public void noFakeTV() {
+        System.out.println("No fake TV");
+    }
 }

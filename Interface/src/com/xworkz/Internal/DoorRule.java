@@ -7,5 +7,9 @@ public interface DoorRule {
 
     void timeToLockDoor();
 
+    default void noFakeDoor() {
+        System.out.println("No Fake Door");
+    }
+
 
 }

@@ -18,4 +18,9 @@ public class Building implements BuildingRule {
     public void timeToCheckBuilding() {
         System.out.println("Checking the building...");
     }
+
+    @Override
+    public void noFakeBuilding() {
+        System.out.println("No fake building");
+    }
 }

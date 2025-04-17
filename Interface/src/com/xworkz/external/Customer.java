@@ -18,4 +18,11 @@ public class Customer implements BakeryRule {
     public void payBefore() {
         System.out.println("Applying Pay Before");
     }
+
+    @Override
+    public void wearMask() {
+        System.out.println("Wearing a mask is mandatory in the bakery.");
+    }
+
+
 }

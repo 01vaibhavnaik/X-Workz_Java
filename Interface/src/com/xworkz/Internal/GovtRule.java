@@ -5,4 +5,8 @@ public interface GovtRule {
     void noTerrorism();
     void noCrime();
 
+    default void noFakeNews() {
+        System.out.println("No Fake News");
+    }
+
 }

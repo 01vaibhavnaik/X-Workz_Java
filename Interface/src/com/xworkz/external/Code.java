@@ -18,4 +18,9 @@ public class Code implements CodingRule {
     public void timeToTest() {
         System.out.println("Time to test");
     }
+
+    @Override
+    public void noFakeCoding() {
+        System.out.println("No fake coding");
+    }
 }

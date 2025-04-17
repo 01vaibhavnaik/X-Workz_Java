@@ -6,6 +6,9 @@ public interface WaterRule {
     void timeToFillTank();
 
     void timeToPurifyWater();
+    default void noFakeWater() {
+        System.out.println("No Fake Water");
+    }
 
 
 }

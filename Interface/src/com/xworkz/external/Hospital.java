@@ -18,4 +18,8 @@ public class Hospital implements HospitalRule {
     public void timeToConsultDoctor() {
         System.out.println("Time to consult doctor");
     }
+    @Override
+    public void noFakeHospital() {
+        System.out.println("No fake hospital");
+    }
 }

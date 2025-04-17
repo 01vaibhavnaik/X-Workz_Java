@@ -18,4 +18,9 @@ public class Alarm implements ClockRule {
     public void resetAlarm() {
         System.out.println("Alarm reset.");
     }
+
+    @Override
+    public void noFakeAlarm() {
+        System.out.println("No fake alarm.");
+    }
 }

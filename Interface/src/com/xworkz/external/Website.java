@@ -18,4 +18,9 @@ public class Website implements BrowserRule {
     public void noPhishing() {
         System.out.println("No phishing is allowed");
     }
+
+    @Override
+    public void noFakeWebsites() {
+        System.out.println("No fake websites are allowed");
+    }
 }

@@ -18,4 +18,9 @@ public class Company implements CompanyRule {
     public void timeToLeaveOffice() {
         System.out.println("Time to leave the office.");
     }
+
+    @Override
+    public void noFakeCompany() {
+        System.out.println("No fake company.");
+    }
 }

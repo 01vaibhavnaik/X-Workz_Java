@@ -18,4 +18,9 @@ public class Bank implements BankRule {
     public void timeToDepositMoney() {
         System.out.println("Time to deposit money is 10:00 AM");
     }
+
+    @Override
+    public void noFakeBank() {
+        System.out.println("No fake bank");
+    }
 }

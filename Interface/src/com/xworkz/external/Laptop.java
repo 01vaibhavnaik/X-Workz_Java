@@ -18,4 +18,9 @@ public class Laptop implements LaptopRule {
     public void noDataLoss() {
         System.out.println("No Data Loss");
     }
+
+    @Override
+    public void noFakeSoftware() {
+        System.out.println("No Fake Software");
+    }
 }

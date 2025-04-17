@@ -8,6 +8,9 @@ public interface HospitalRule {
     void timeToDischargePatient();
 
     void timeToConsultDoctor();
+    default void noFakeHospital() {
+        System.out.println("No Fake Hospital");
+    }
 
 
 }

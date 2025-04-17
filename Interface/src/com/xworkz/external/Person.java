@@ -17,4 +17,8 @@ public class Person implements PeopleRule {
     public void toBeTrustworthy() {
         System.out.println("toBeTrustworthy");
     }
+    @Override
+    public void noFakePeople() {
+        System.out.println("No Fake People");
+    }
 }

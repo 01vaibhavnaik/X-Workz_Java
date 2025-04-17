@@ -8,5 +8,9 @@ public interface WifeRule {
 
     void toLoveWife();
 
+    default void noFakeWife() {
+        System.out.println("No Fake Wife");
+    }
+
 
 }

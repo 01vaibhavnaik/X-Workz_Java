@@ -18,4 +18,8 @@ public class Table implements TableRule {
     public void timeToDecorateTable() {
         System.out.println("Decorating the table...");
     }
+    @Override
+    public void noFakeTable() {
+        System.out.println("No fake table");
+    }
 }

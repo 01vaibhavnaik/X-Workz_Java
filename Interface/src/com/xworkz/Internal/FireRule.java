@@ -7,4 +7,8 @@ public interface FireRule {
 
     void timeToCallEmergencyServices();
 
+    default void noFakeFire() {
+        System.out.println("No Fake Fire");
+    }
+
 }

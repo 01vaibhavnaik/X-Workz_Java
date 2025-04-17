@@ -7,5 +7,7 @@ public interface RocketRule {
 
     void timeToRefuelRocket();
 
-
+    default void noFakeRocket() {
+        System.out.println("No Fake Rocket");
+    }
 }

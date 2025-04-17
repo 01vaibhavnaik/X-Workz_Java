@@ -18,4 +18,9 @@ public class ATM implements ATMRule {
     public void timeToChangePin() {
         System.out.println("Changing PIN at ATM...");
     }
+
+    @Override
+    public void timeToDepositMoney() {
+        System.out.println("Depositing money at ATM...");
+    }
 }

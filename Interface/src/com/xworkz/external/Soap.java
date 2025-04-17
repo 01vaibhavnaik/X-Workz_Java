@@ -18,4 +18,9 @@ public class Soap implements SoapRule {
     public void timeToTakeBath() {
         System.out.println("Time to take bath.");
     }
+
+    @Override
+    public void noFakeSoap() {
+        System.out.println("No fake soap.");
+    }
 }

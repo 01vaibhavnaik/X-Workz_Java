@@ -18,4 +18,9 @@ public class Room implements RoomRule {
     public void keepClean() {
         System.out.println("Keep the room clean");
     }
+
+    @Override
+    public void sleep() {
+        System.out.println("Sleeping in the room");
+    }
 }

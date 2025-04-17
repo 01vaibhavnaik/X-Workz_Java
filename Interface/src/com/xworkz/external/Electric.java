@@ -18,4 +18,9 @@ public class Electric implements ElectricityRule {
     public void timeToUseElectricity() {
         System.out.println("Time to use electricity is 8 AM to 10 PM");
     }
+
+    @Override
+    public void noFakeElectricity() {
+        System.out.println("No fake electricity");
+    }
 }

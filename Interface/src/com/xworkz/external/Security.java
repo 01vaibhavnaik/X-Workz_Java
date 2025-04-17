@@ -18,4 +18,9 @@ public class Security implements SecurityRule {
     public void timeToReportIncident() {
         System.out.println("Reporting incident to authorities...");
     }
+
+    @Override
+    public void noFakeSecurity() {
+        System.out.println("No fake security");
+    }
 }

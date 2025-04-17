@@ -17,4 +17,9 @@ public class CarVehicle implements CarRule {
     public void wearSeatBelt() {
         System.out.println("Wear seat belt in car");
     }
+
+    @Override
+    public void carMaintenance() {
+        System.out.println("Regular car maintenance is required for car.");
+    }
 }

@@ -5,4 +5,8 @@ public interface BoxingRule {
     void useGloves();
     void useShoe();
 
+    default void noFakeBoxing() {
+        System.out.println("No Fake Boxing");
+    }
+
 }

@@ -8,4 +8,8 @@ public interface ChildrenRule {
     void toPlayWithChildren();
 
     void toTeachChildren();
+
+    default void noFakeChildren() {
+        System.out.println("No Fake Children");
+    }
 }

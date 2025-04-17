@@ -18,4 +18,9 @@ public class Food implements FoodRule {
     public void eatComplete() {
         System.out.println("Eat complete in the food");
     }
+
+    @Override
+    public void noFakeFood() {
+        System.out.println("No fake food in the food");
+    }
 }

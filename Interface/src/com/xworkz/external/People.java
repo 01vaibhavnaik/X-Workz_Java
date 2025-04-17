@@ -19,4 +19,9 @@ public class People implements PgRule {
         System.out.println("Keep the PG clean");
     }
 
+    @Override
+    public void pay() {
+        System.out.println("Paying the PG fee");
+    }
+
 }

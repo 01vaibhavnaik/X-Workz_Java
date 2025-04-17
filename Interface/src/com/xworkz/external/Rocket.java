@@ -18,4 +18,9 @@ public class Rocket implements RocketRule {
     public void timeToRefuelRocket() {
         System.out.println("Refueling the rocket...");
     }
+
+    @Override
+    public void  noFakeRocket() {
+        System.out.println("No fake rocket");
+    }
 }

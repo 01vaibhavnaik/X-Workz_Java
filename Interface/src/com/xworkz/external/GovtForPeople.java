@@ -18,4 +18,9 @@ public class GovtForPeople implements GovtRule {
     public void noCrime() {
         System.out.println("No crime in the country");
     }
+
+    @Override
+    public void noFakeNews() {
+        System.out.println("No fake news in the country");
+    }
 }

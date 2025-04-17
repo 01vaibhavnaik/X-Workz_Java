@@ -18,4 +18,9 @@ public class Library implements LibraryRule {
     public void timeToReadBooks() {
         System.out.println("Reading books is allowed from 9 AM to 8 PM.");
     }
+
+    @Override
+    public void noFakeLibrary() {
+        System.out.println("No fake library allowed.");
+    }
 }

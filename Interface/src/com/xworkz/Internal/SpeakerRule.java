@@ -5,6 +5,10 @@ public interface SpeakerRule {
     void volume();
     void timeToListen();
 
+    default void noFakeSpeaker() {
+        System.out.println("No Fake Speaker");
+    }
+
 
 
 

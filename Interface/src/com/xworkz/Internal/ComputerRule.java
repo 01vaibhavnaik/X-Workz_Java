@@ -8,5 +8,9 @@ public interface ComputerRule {
 
     void timeToExecute();
 
+    default void noFakeComputer() {
+        System.out.println("No Fake Computer");
+    }
+
 
 }

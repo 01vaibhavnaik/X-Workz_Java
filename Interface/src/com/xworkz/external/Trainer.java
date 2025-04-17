@@ -18,4 +18,9 @@ public class Trainer implements TrainerRule {
     public void timeToSleep() {
         System.out.println("Time to sleep.");
     }
+
+    @Override
+    public void noFakeTrainer() {
+        System.out.println("No fake trainer.");
+    }
 }

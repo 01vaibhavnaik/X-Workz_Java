@@ -18,4 +18,9 @@ public class Girlfriend implements GirlFriendRule {
     public void toRespectGirlFriend() {
         System.out.println("Respecting the girlfriend...");
     }
+
+    @Override
+    public void noFakeGf() {
+        System.out.println("No fake girlfriend");
+    }
 }

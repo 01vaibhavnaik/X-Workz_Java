@@ -7,5 +7,9 @@ public interface ATMRule {
 
     void timeToChangePin();
 
+    default void timeToDepositMoney() {
+        System.out.println("Time to deposit money is 10:00 AM to 5:00 PM");
+    }
+
 
 }

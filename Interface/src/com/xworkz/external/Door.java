@@ -18,4 +18,9 @@ public class Door implements DoorRule {
     public void timeToLockDoor() {
         System.out.println("Time to lock door is 10 seconds");
     }
+
+    @Override
+    public void noFakeDoor() {
+        System.out.println("No fake door");
+    }
 }

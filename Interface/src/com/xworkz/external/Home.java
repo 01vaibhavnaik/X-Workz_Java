@@ -18,5 +18,9 @@ public class Home implements HomeRule {
     public void cleanHouse() {
         System.out.println("Clean the house every Sunday");
     }
+    @Override
+    public void doNotDisturb() {
+        System.out.println("Do not disturb");
+    }
 
 }

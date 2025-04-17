@@ -5,4 +5,7 @@ public interface ChargerRule {
     void noShortCircuit();
     void noFakeCharger();
 
+    default void chargerSafety() {
+        System.out.println("Ensure charger safety.");}
+
 }

@@ -5,4 +5,8 @@ public interface CollageRule {
     void noSmoking();
     void noDrugs();
 
+    default void staySilent() {
+        System.out.println("Stay silent in the college");
+    }
+
 }
