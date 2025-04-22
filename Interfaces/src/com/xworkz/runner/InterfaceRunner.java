@@ -146,6 +146,27 @@ public class InterfaceRunner {
         Mover mover = new RobotMover();
         WarehouseSystem warehouseSystem = new WarehouseSystem(mover);
         warehouseSystem.moveItems();
+        System.out.println("==================36========================");
+        Weapon weapon = new Sword();
+        Bow bow = new Bow(weapon);
+        bow.useWeapon();
+        System.out.println("==================37========================");
+        Level level = new ForestLevel();
+        DesertLevel desertLevel = new DesertLevel(level);
+        desertLevel.level();
+        System.out.println("==================38========================");
+        PowerUp powerUp = new HealthBoost();
+        SpeedBoost speedBoost = new SpeedBoost(powerUp);
+        speedBoost.activate();
+        System.out.println("==================39========================");
+        Device device = new SmartWatch();
+        SmartSpeaker smartSpeaker = new SmartSpeaker(device);
+        smartSpeaker.turnOn();
+        System.out.println("==================40========================");
+        Book book = new Ebook();
+        PaperBackBook  paperBackBook= new PaperBackBook(book);
+        paperBackBook.read();
+
 
 
 
