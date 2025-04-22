@@ -125,6 +125,28 @@ public class InterfaceRunner {
         System.out.println("==================30========================");
         EmailClient emailClient = new OutlookClient();
         ThunderbirdClient thunderbirdClient = new ThunderbirdClient(emailClient);
+        thunderbirdClient.sendEmail();
+        System.out.println("==================31========================");
+        Watcher watcher = new FileWatcher();
+        SyncService syncService = new SyncService(watcher);
+        syncService.sync();
+        System.out.println("==================32========================");
+        Displayer displayer = new TextDisplayer();
+        NotificationPopup notificationPopup = new NotificationPopup(displayer);
+        notificationPopup.showNotification();
+        System.out.println("==================33========================");
+        Filter filter = new SpamFilter();
+        Client client = new Client(filter);
+        client.processEmail();
+        System.out.println("==================34========================");
+        Reporter reporter = new ErrorReporter();
+        BugTracker  bugTracker = new BugTracker(reporter);
+        bugTracker.trackBug();
+        System.out.println("==================35========================");
+        Mover mover = new RobotMover();
+        WarehouseSystem warehouseSystem = new WarehouseSystem(mover);
+        warehouseSystem.moveItems();
+
 
 
 
