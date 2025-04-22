@@ -12,4 +12,13 @@ public class ConnectorImp implements Connector{
     }
 
 
+    public static class CitizenContitutionImp implements Constitution {
+
+        @Override
+        public void folloLaws() {
+            System.out.println("follow laws in CitizenContitutionImp");
+        }
+
+
+    }
 }

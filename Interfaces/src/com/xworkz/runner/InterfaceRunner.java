@@ -1,0 +1,134 @@
+package com.xworkz.runner;
+
+import com.xworkz.external.*;
+import com.xworkz.internal.*;
+
+public class InterfaceRunner {
+
+    public static void main(String[] args) {
+        System.out.println("==================1========================");
+        ICC icc = new IndianCricketTeamIccImp();
+        BCCI bcci = new BCCI(icc);
+        bcci.display();
+        System.out.println("==================2========================");
+        Constitution constitution = new CitizenConstitutionImp();
+        Government government = new Government(constitution);
+        government.display();
+        System.out.println("==================3========================");
+        Laptop laptop = new LaptopImp();
+        OperatingSys operatingSys = new OperatingSys(laptop);
+        operatingSys.display();
+        System.out.println("==================4========================");
+        FIFA fifa = new IndianFootballTeam();
+        AIFF aiff = new AIFF(fifa);
+        aiff.display();
+        System.out.println("==================5========================");
+        CollegeRules collegeRules = new EngineerStd();
+        MedicalStudent medicalStudent = new MedicalStudent(collegeRules);
+        medicalStudent.display();
+        System.out.println("==================6========================");
+        PaymentGateway paymentGateway = new CreditCardPayment();
+        PayPalPayment payPalPayment = new PayPalPayment(paymentGateway);
+        payPalPayment.display();
+        System.out.println("==================7========================");
+        Vehicle vehicle = new Car();
+        Bike bike = new Bike(vehicle);
+        bike.display();
+        System.out.println("==================8========================");
+        Shape shape = new Circle();
+        Rectangle rectangle = new Rectangle(shape);
+        rectangle.draw();
+        System.out.println("==================9========================");
+        NotificationService notificationService = new EmailService();
+        SMSService smsService = new SMSService(notificationService);
+        smsService.sendSMS();
+        System.out.println("==================10========================");
+        DatabaseConnection databaseConnection = new MySQLConnection();
+        PostgreSQLConnection postgreSQLConnection = new PostgreSQLConnection(databaseConnection);
+        postgreSQLConnection.connect();
+        System.out.println("==================11========================");
+        MediaPlayer mediaPlayer = new VLCPlayer();
+        MP3Player mp3Player = new MP3Player(mediaPlayer);
+        mp3Player.show();
+        System.out.println("==================12========================");
+        Animal animal = new Dog();
+        Cat cat = new Cat(animal);
+        cat.sound();
+        System.out.println("==================13========================");
+        Logger logger = new ConsoleLogger();
+        FileLogger fileLogger = new FileLogger(logger);
+        fileLogger.log();
+        System.out.println("==================14========================");
+        ReportGenerator reportGenerator = new PDFReport();
+        ExcelReport excelReport = new ExcelReport(reportGenerator);
+        excelReport.generate();
+        System.out.println("==================15========================");
+        UserAuthentication userAuthentication = new OAuthLogin();
+        JWTLogin jwtLogin = new JWTLogin(userAuthentication);
+        jwtLogin.authenticate();
+        System.out.println("==================16========================");
+        DataExporter dataExporter = new CSVExporter();
+        XMLExporter xmlExporter = new XMLExporter(dataExporter);
+        xmlExporter.export();
+        System.out.println("==================17========================");
+        SortingAlgorithm sortingAlgorithm = new QuickSort();
+        MergeSort mergeSort = new MergeSort(sortingAlgorithm);
+        mergeSort.sort();
+        System.out.println("==================18========================");
+        CompressionAlgorithm compressionAlgorithm = new ZipCompressor();
+        RarCompressor rarCompressor = new RarCompressor(compressionAlgorithm);
+        rarCompressor.compress();
+        System.out.println("==================19========================");
+        TaxCalculator taxCalculator = new USTaxCalculator();
+        CanadaTaxCalculator canadaTaxCalculator = new CanadaTaxCalculator(taxCalculator);
+        canadaTaxCalculator.calculateTax();
+        System.out.println("==================20========================");
+        SearchEngine searchEngine = new GoogleSearch();
+        BingSearch bingSearch = new BingSearch(searchEngine);
+        bingSearch.search();
+        System.out.println("==================21========================");
+        Game game = new Chess();
+        TicTacToe ticTacToe = new TicTacToe(game);
+        ticTacToe.play();
+        System.out.println("==================22========================");
+        Camera camera = new DSLR();
+        Webcam webcam = new Webcam(camera);
+        webcam.captureImage();
+        System.out.println("==================23========================");
+        Document document = new WordDocument();
+        TextDocument textDocument = new TextDocument(document);
+        textDocument.open();
+        System.out.println("==================24========================");
+        Transport transport = new Bus();
+        Train train = new Train(transport);
+        train.start();
+        System.out.println("==================25========================");
+        StorageService storageService = new LocalStorage();
+        CloudStorage cloudStorage = new CloudStorage(storageService);
+        cloudStorage.save();
+        System.out.println("==================26========================");
+        Sensor sensor = new TemperatureSensor();
+        PressureSensor  pressureSensor= new PressureSensor(sensor);
+        pressureSensor.readPressure();
+        System.out.println("==================27========================");
+        Printer printer = new InkjetPrinter();
+        LaserPrinter laserPrinter = new LaserPrinter(printer);
+        laserPrinter.print();
+        System.out.println("==================28========================");
+        Account account = new SavingsAccount();
+        CheckingAccount checkingAccount = new CheckingAccount(account);
+        checkingAccount.createAccount();
+        System.out.println("==================29========================");
+        FileParser fileParser = new JSONParser();
+        XMLParser xmlParser = new XMLParser(fileParser);
+        xmlParser.parseXML();
+        System.out.println("==================30========================");
+        EmailClient emailClient = new OutlookClient();
+        ThunderbirdClient thunderbirdClient = new ThunderbirdClient(emailClient);
+
+
+
+
+
+    }
+}

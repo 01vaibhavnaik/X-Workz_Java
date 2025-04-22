@@ -14,6 +14,8 @@ public class ConnectorUser {
          if(connector!=null){
              this.connector.run();
              this.connector.stop();
+         }else {
+             System.err.println("Null");
          }
     }
 }
