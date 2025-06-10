@@ -14,19 +14,19 @@ public class BirthCertificateDTO implements Serializable {
     private String nurseName;
     private String hospitalType;
 
-    @Override
-    public String toString() {
-        return "BirthCertificateDTO{" +
-                "birthId=" + birthId +
-                ", hospitalName='" + hospitalName + '\'' +
-                ", fatherName='" + fatherName + '\'' +
-                ", motherName='" + motherName + '\'' +
-                ", date=" + date +
-                ", doctorName='" + doctorName + '\'' +
-                ", nurseName='" + nurseName + '\'' +
-                ", hospitalType='" + hospitalType + '\'' +
-                '}';
-    }
+//    @Override
+//    public String toString() {
+//        return "BirthCertificateDTO{" +
+//                "birthId=" + birthId +
+//                ", hospitalName='" + hospitalName + '\'' +
+//                ", fatherName='" + fatherName + '\'' +
+//                ", motherName='" + motherName + '\'' +
+//                ", date=" + date +
+//                ", doctorName='" + doctorName + '\'' +
+//                ", nurseName='" + nurseName + '\'' +
+//                ", hospitalType='" + hospitalType + '\'' +
+//                '}';
+//    }
 
     public long getBirthId() {
         return birthId;
