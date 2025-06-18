@@ -1,6 +1,8 @@
 package com.xworkz.servlet;
 
 import com.xworkz.dto.JobApplicationDTO;
+import com.xworkz.service.JobService;
+import com.xworkz.service.JobServiceImp;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -22,6 +24,7 @@ public class JobApplicationServlet extends HttpServlet {
         String salary =servletRequest.getParameter("salary");
         String experience =servletRequest.getParameter("experienceName");
 
+
         JobApplicationDTO jobApplicationDTO= new JobApplicationDTO();
         jobApplicationDTO.setName(name);
         jobApplicationDTO.setEmail(email);
@@ -32,8 +35,12 @@ public class JobApplicationServlet extends HttpServlet {
 
         servletRequest.setAttribute("job",jobApplicationDTO);
 
-        RequestDispatcher requestDispatcher=servletRequest.getRequestDispatcher("JobAppResult.jsp");
-        requestDispatcher.forward(servletRequest, servletResponse);
+        JobService jobService=new JobServiceImp();
+        jobService.validate(jobApplicationDTO);
+
+//        RequestDispatcher requestDispatcher=servletRequest.getRequestDispatcher("JobAppResult.jsp");
+//        requestDispatcher.forward(servletRequest, servletResponse);
+
 
 
     }

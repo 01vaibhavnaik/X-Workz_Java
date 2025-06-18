@@ -5,7 +5,7 @@ import javax.servlet.annotation.WebServlet;
 import java.io.IOException;
 
 @WebServlet(urlPatterns = "/crime", loadOnStartup = 1)
-public class theftServlet extends GenericServlet {
+public class TheftServlet extends GenericServlet {
     @Override
     public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException {
         String name=servletRequest.getParameter("name");
@@ -16,11 +16,18 @@ public class theftServlet extends GenericServlet {
         String item=servletRequest.getParameter("item");
         String date=servletRequest.getParameter("date");
 
-        RequestDispatcher requestDispatcher=servletRequest.getRequestDispatcher("TheftResult.jsp");
+        servletRequest.setAttribute("Name",name);
+        servletRequest.setAttribute("MobileNumber",mobile);
+        servletRequest.setAttribute("Item",item);
+        servletRequest.setAttribute("Date",date);
 
-        servletRequest.setAttribute("Name:",name);
-        servletRequest.setAttribute("Mobile Number:",mobile);
-        servletRequest.setAttribute("Item:",item);
-        servletRequest.setAttribute("Date:",date);
+        RequestDispatcher requestDispatcher = servletRequest.getRequestDispatcher("TheftResult.jsp");
+        requestDispatcher.forward(servletRequest, servletResponse);
+
+
+
+
+
+
     }
 }

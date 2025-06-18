@@ -7,18 +7,16 @@
 </head>
 <body>
 
-<p>
-    Location:${dto.location}
-</p>
-<p>
-    Capture by:${dto.capture}
-</p>
-<p>
-    Temp:${dto.temprature}
-</p>
-<p>
-    date:${dto.date}
-</p>
+<div class="justify-content-center align-items-center">
+    <p>
+        Location:${dto.location}<br>
 
+        Capture by:${dto.capture}<br>
+
+        Temp:${dto.temprature}<br>
+
+        date:${dto.date}
+    </p>
+</div>
 </body>
 </html>
