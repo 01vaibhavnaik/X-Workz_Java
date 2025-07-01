@@ -34,6 +34,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="MarriageCertificate.jsp">Marriage Certificate</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="JobSearch.jsp">Marriage Certificate</a>
+                </li>
 
             </ul>
         </div>

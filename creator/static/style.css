@@ -1,0 +1,68 @@
+  body {
+    background-image: url('mainBg.JPG');
+    background-size: cover;
+  }
+
+  #about-section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-in-out;
+  }
+
+  #about-section.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
+  #cardImg {
+    opacity: 0;
+    transform: translateY(100px) rotate(0deg);
+    transition: all 0.8s ease-in-out;
+  }
+
+  #cardImg.display {
+    opacity: 1;
+    transform: translateY(0) rotate(-20deg);
+  }
+
+  #cardImg1 {
+    opacity: 0;
+    transform: translateY(100px) rotate(0deg);
+    transition: all 0.8s ease-in-out;
+  }
+
+  #cardImg1.display1 {
+    opacity: 1;
+    transform: translateY(0) rotate(20deg);
+
+  }
+
+  .margin1 {
+    margin-top: 10rem;
+    margin-left: 20rem;
+  }
+
+
+  .card-link-hover:hover {
+    text-shadow: 0 0 5px white;
+  }
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 2;
+  }
+
+
+  .pop:hover {
+    text-shadow: 0 0 5px white;
+  }
+
+  .pop-hover:hover~.btn,
+  .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  }

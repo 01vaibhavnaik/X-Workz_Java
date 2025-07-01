@@ -24,22 +24,48 @@ public class JobApplicationServlet extends HttpServlet {
         String salary =servletRequest.getParameter("salary");
         String experience =servletRequest.getParameter("experienceName");
 
+        double newSalary = Double.parseDouble(salary);
+        int newExperience = Integer.parseInt(experience);
 
-        JobApplicationDTO jobApplicationDTO= new JobApplicationDTO();
-        jobApplicationDTO.setName(name);
-        jobApplicationDTO.setEmail(email);
-        jobApplicationDTO.setEducation(education);
-        jobApplicationDTO.setSkill(skill);
-        jobApplicationDTO.setSalary(Double.parseDouble(salary));
-        jobApplicationDTO.setExperience(Integer.parseInt(experience));
+        JobApplicationDTO jobApplicationDTO=new JobApplicationDTO(name, email, education, skill, newSalary, newExperience);
+        servletRequest.setAttribute("job", jobApplicationDTO);
 
-        servletRequest.setAttribute("job",jobApplicationDTO);
+        JobService jobService = new JobServiceImp();
+        String result = jobService.validate(jobApplicationDTO);
+        System.out.println("Result from service: " + result);
 
-        JobService jobService=new JobServiceImp();
-        jobService.validate(jobApplicationDTO);
+        RequestDispatcher requestDispatcher = servletRequest.getRequestDispatcher("JobApplication.jsp");
+        servletRequest.setAttribute("message", result);
+        if(!result.equals("data is saved successfully")) {
+            servletRequest.setAttribute("job", jobApplicationDTO);
+        }
+        requestDispatcher.forward(servletRequest, servletResponse);
 
-//        RequestDispatcher requestDispatcher=servletRequest.getRequestDispatcher("JobAppResult.jsp");
-//        requestDispatcher.forward(servletRequest, servletResponse);
+
+
+
+
+
+
+    }
+
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String search = req.getParameter("searchName");
+
+        int searchId = Integer.parseInt(search);
+
+        JobService jobService = new JobServiceImp();
+        JobApplicationDTO jobApplicationDTO=jobService.getJobApplicationById(searchId);
+
+        if (jobApplicationDTO == null) {
+            System.out.println("No job application found with ID: " );
+
+        } else {
+            System.out.println("Job application found: ");
+
+
+        }
 
 
 

@@ -22,52 +22,39 @@ public class JobApplicationDTO implements Serializable {
                 ", experience=" + experience +
                 '}';
     }
+    public JobApplicationDTO() {
+        System.out.println("no-args constructor in JobApplicationDTO");
+    }
+    public JobApplicationDTO(String name, String email, String education, String skill, double salary, int experience) {
+        this.name = name;
+        this.email = email;
+        this.education = education;
+        this.skill = skill;
+        this.salary = salary;
+        this.experience = experience;
+    }
 
     public String getName() {
         return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public String getEmail() {
         return email;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
     public String getEducation() {
         return education;
-    }
-
-    public void setEducation(String education) {
-        this.education = education;
     }
 
     public String getSkill() {
         return skill;
     }
 
-    public void setSkill(String skill) {
-        this.skill = skill;
-    }
-
     public double getSalary() {
         return salary;
     }
 
-    public void setSalary(double salary) {
-        this.salary = salary;
-    }
-
     public int getExperience() {
         return experience;
-    }
-
-    public void setExperience(int experience) {
-        this.experience = experience;
     }
 }

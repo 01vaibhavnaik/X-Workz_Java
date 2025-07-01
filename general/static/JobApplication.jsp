@@ -12,18 +12,20 @@
 
 <div class="d-flex justify-content-center align-items-center vh-100 ">
     <div class="border border-primary rounded p-5" >
+
         <h1>Job Application Form</h1>
+
     <form action="jobapplication" method="POST">
         <div class="mb-3">
             <label  class="form-label ">Name :</label>
-            <input type="text" class="form-control" name="nameName" required >
+            <input type="text" class="form-control" name="nameName" value="${job.name}" required ><span class="text-danger">${message}</span>
         </div>
         <div class="mb-3">
             <label  class="form-label ">Email</label>
-            <input type="email" class="form-control" name="emailName" required>
+            <input type="email" class="form-control" name="emailName" value="${job.email}"required>
         </div>
         <label  class="form-label ">Education:</label>
-        <select name="educationName" >
+        <select name="educationName" value="${job.education}" >
             <option>select</option>
             <option>BCOM</option>
             <option>BBA</option>
@@ -37,14 +39,14 @@
         </select>
         <div class="mb-3">
             <label  class="form-label ">Skills</label>
-            <input type="text" class="form-control" name="skillName" required>
+            <input type="text" class="form-control" name="skillName" value="${job.skill}" required>
         </div>
         <div class="mb-3">
             <label  class="form-label">Salary</label>
-            <input type="number" class="form-control" name="salary" required>
+            <input type="number" class="form-control" name="salary" value="${job.salary}" required>
         </div>
         <label  class="form-label">Experience:</label>
-        <select name="experienceName" >
+        <select name="experienceName" value="${job.experience}">
             <option>select</option>
             <option>0</option>
             <option>1</option>
