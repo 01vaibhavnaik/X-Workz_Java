@@ -21,5 +21,8 @@ public class CustomerRunner {
 //      To Save No Of Lines
         Customer customer=new Customer();
         customer.buy((no)->(no>10));
+
+
+
     }
 }

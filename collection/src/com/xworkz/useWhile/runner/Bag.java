@@ -27,7 +27,5 @@ public class Bag {
                 System.out.println(name.next());
             }
         }
-
-
-
+        
 }
