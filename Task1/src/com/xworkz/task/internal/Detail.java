@@ -1,4 +1,4 @@
-package com.xworkz.task2.internal;
+package com.xworkz.task.internal;
 
 
 import lombok.AllArgsConstructor;
@@ -10,7 +10,7 @@ import lombok.ToString;
 @ToString
 
 public class Detail {
-    private String name;
-    private String emailId;
-    private Edu education;
+    private String experience;
+    private int salary;
+    private Education education;
 }

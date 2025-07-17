@@ -1,4 +1,4 @@
-package com.xworkz.task2.internal;
+package com.xworkz.task.internal;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

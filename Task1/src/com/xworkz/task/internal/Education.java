@@ -1,4 +1,4 @@
-package com.xworkz.task2.internal;
+package com.xworkz.task.internal;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -7,8 +7,8 @@ import lombok.ToString;
 @AllArgsConstructor
 @Getter
 @ToString
-public class Edu {
+public class Education {
         private String degreeName;
         private String institutionName;
-        private Univercity univercity;
+        private University univercity;
 }
