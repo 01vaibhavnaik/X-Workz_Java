@@ -10,5 +10,6 @@ import lombok.ToString;
 
 public class Chancellor {
     private String nameOfChancellor;
-    private int noOfYearsInService;
+    private int age;
+    private int exp;
 }

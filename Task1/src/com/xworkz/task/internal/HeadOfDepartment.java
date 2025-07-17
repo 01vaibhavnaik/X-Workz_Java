@@ -11,6 +11,6 @@ import java.util.List;
 @ToString
 public class HeadOfDepartment {
     private String nameOfHead;
-    private String phNumber;
+    private int age;
     private List<Staff> staff;
 }
