@@ -2,6 +2,7 @@ package com.xworkz.compare.runner;
 
 import com.xworkz.compare.product.TrainDto;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -10,30 +11,47 @@ import java.util.Comparator;
 
 public class TrainRunner {
     public static void main(String[] args) {
-        TrainDto trainDto = new TrainDto("Rajdhani", "Delhi", 5000);
-        TrainDto trainDto1 = new TrainDto("Shatabdi", "Mumbai", 3000);
-        TrainDto trainDto2 = new TrainDto("Duronto", "Kolkata", 4000);
-        TrainDto trainDto3 = new TrainDto("Jan Shatabdi", "Chennai", 2000);
-        TrainDto trainDto4 = new TrainDto("Garib Rath", "Bangalore", 1500);
-        TrainDto trainDto5 = new TrainDto("Express", "Hyderabad", 2500);
-        TrainDto trainDto6 = new TrainDto("Patna Exp", "Patna", 3500);
-        TrainDto trainDto7 = new TrainDto("Rajkot Exp", "Rajkot", 4500);
-        TrainDto trainDto8 = new TrainDto("Surat Exp", "Surat", 5500);
-        TrainDto trainDto9 = new TrainDto("Ahmedabad Exp", "Ahmedabad", 6000);
-        TrainDto trainDto10 = new TrainDto("Goa Exp", "Goa", 7000);
 
+        LocalDateTime localDateTime=LocalDateTime.now();
 
+        TrainDto trainDto = new TrainDto(3,"Rajdhani", "Delhi", 5000,localDateTime);
+        TrainDto trainDto1 = new TrainDto(5,"Shatabdi", "Mumbai", 3000,localDateTime);
+        TrainDto trainDto2 = new TrainDto(11,"Duronto", "Kolkata", 4000,localDateTime);
+        TrainDto trainDto3 = new TrainDto(34,"Jan Shatabdi", "Chennai", 2000,localDateTime);
+        TrainDto trainDto4 = new TrainDto(13,"Garib Rath", "Bangalore", 1500, localDateTime);
+        TrainDto trainDto5 = new TrainDto(23,"Express", "Hyderabad", 2500,localDateTime);
+        TrainDto trainDto6 = new TrainDto(54,"Patna Exp", "Patna", 3500,localDateTime);
+        TrainDto trainDto7 = new TrainDto(83,"Rajkot Exp", "Rajkot", 4500,localDateTime);
+        TrainDto trainDto8 = new TrainDto(122,"Surat Exp", "Surat", 5500,localDateTime);
+        TrainDto trainDto9 = new TrainDto(27,"Ahmedabad Exp", "Ahmedabad", 6000,localDateTime);
+        TrainDto trainDto10 = new TrainDto(55,"Goa Exp", "Goa", 7000,localDateTime);
+        TrainDto trainDto11 = new TrainDto(43,"Goa Exp", "Vacso", 7000,localDateTime);
 
-        
 
 
         Collection<TrainDto> collection= new ArrayList<>(Arrays.asList(trainDto,trainDto1,trainDto2,trainDto3,trainDto4,trainDto5,trainDto6,trainDto7,trainDto8,
-                trainDto9,trainDto10));
+                trainDto9,trainDto10,trainDto11));
+        System.out.println("-------------------------sort by Integer -----------------------------------");
+        Comparator<TrainDto> no=(o1,o2)->Integer.compare(o1.getTrainNo(), o2.getTrainNo());
+        collection.stream().sorted(no).forEach(s-> System.out.println("Train No :"+s.getTrainNo()+"   Train Name :"+s.getTrainName()));
 
-//      Comparator<TrainDto> list = (o1,o2)->o1.getTrainName().compareTo(o2.getTrainName());
-        Comparator<TrainDto> list = Comparator.comparing(TrainDto::getTrainName).thenComparing(TrainDto::getTrainSource);
+        System.out.println("-------------------------sort by Acending -----------------------------------");
+        collection.stream()
+                .sorted(Comparator.comparing(TrainDto::getTrainName))
+                .forEach(s -> System.out.println(s.getTrainName()));
+        System.out.println("-------------------------sort by  Dcending-----------------------------------");
+        collection.stream()
+                .sorted(Comparator.comparing(TrainDto::getTrainName).reversed())
+                .forEach(s -> System.out.println(s.getTrainName()));
+        System.out.println("-------------------------sort by  String-----------------------------------");
+        Comparator<TrainDto> list = (o1,o2)->o1.getTrainName().compareTo(o2.getTrainName());
+        collection.stream().sorted(list).forEach(s-> System.out.println(s.getTrainName()));
+        System.out.println("-------------------------sort by Name and Source -----------------------------------");
+        Comparator<TrainDto> list1 = Comparator.comparing(TrainDto::getTrainName).thenComparing(TrainDto::getTrainSource);
+        collection.stream().sorted(list1).forEach(s-> System.out.println("Name :"+s.getTrainName()+"    Source :"+s.getTrainSource()));
 
-        collection.stream().sorted(list).forEach(s-> System.out.println(s));
+
+
 
     }
 }
